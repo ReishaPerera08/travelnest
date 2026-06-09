@@ -1,5 +1,5 @@
 // sw.js — service worker for offline support
-const CACHE_NAME = "travelnest-v3";
+const CACHE_NAME = "travelnest-v4";
 
 // files to cache so the site works offline
 const FILES_TO_CACHE = [

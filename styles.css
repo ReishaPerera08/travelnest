@@ -71,23 +71,23 @@ main section {
 }
 
 .btn-primary {
-  background: var(--coral);
+  background: #c4502c;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background: var(--coral-dark);
+  background: #a8431f;
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--ocean);
-  border-color: var(--ocean);
+  color: var(--ocean-deep);
+  border-color: var(--ocean-deep);
 }
 
 .btn-secondary:hover {
-  background: var(--ocean);
+  background: var(--ocean-deep);
   color: #fff;
   transform: translateY(-2px);
 }
@@ -235,7 +235,7 @@ main section {
 
 .hero-text #hero-quote {
   font-size: 1.15rem;
-  color: var(--muted);
+  color: var(--ink);
   font-style: italic;
   min-height: 3.5em;
   margin-bottom: 24px;
