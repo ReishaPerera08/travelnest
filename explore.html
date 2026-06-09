@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations - TravelNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<nav class="menu-bar">
+  <div class="menu-container">
+    <h1>🌍TravelNest</h1>
+    <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="index.html" class="menu-item">Home</a></li>
+      <li><a href="explore.html" class="menu-item active">Explore</a></li>
+      <li><a href="budget.html" class="menu-item">Budget</a></li>
+      <li><a href="trips.html" class="menu-item">Random Trip</a></li>
+      <li><a href="mood.html" class="menu-item">Travel Mood</a></li>
+      <li><a href="contact.html" class="menu-item">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>Explore Destinations</h1>
+            <p>Discover amazing places around the world!</p>
+        </div>
+    </section>
+
+      <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filters">
+        <select id="continent-filter">
+          <option value="All">All Continents</option>
+          <option value="Africa">Africa</option>
+          <option value="Antarctica">Antarctica</option>
+          <option value="Asia">Asia</option>
+          <option value="Australia">Australia</option>
+          <option value="North America">North America</option>
+          <option value="South America">South America</option>
+          <option value="Europe">Europe</option>
+        </select>
+
+        <div class="search-wrapper">
+          <input type="text" id="destination-search" placeholder="Search destinations...">
+          <div id="suggestions" class="suggestions"></div>
+        </div>
+
+        <button id="clear-filters" class="btn-secondary">Clear Filters</button>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="destinations-section">
+    <div class="container">
+      <div id="destinations-grid" class="destinations-grid">
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATION MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍TravelNest</h4>
+        <p>Your personal travel planning companion</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore Destinations</a></li>
+          <li><a href="budget.html">Budget Planner</a></li>
+          <li><a href="trips.html">Random Trip Generator</a></li>
+          <li><a href="mood.html">Set Travel Mood</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TravelNest. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script src="explore.js"></script>
+
+</body>
+</html>

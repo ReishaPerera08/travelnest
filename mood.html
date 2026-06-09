@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Mood - TravelNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+
+<body>
+
+<nav class="menu-bar">
+  <div class="menu-container">
+    <h1>🌍TravelNest</h1>
+    <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="index.html" class="menu-item">Home</a></li>
+      <li><a href="explore.html" class="menu-item">Explore</a></li>
+      <li><a href="budget.html" class="menu-item">Budget</a></li>
+      <li><a href="trips.html" class="menu-item">Random Trip</a></li>
+      <li><a href="mood.html" class="menu-item active">Travel Mood</a></li>
+      <li><a href="contact.html" class="menu-item">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1>Travel Mood</h1>
+      <p>Set the mood and track your travel goals</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Set Your Travel Mood</h2>
+    <div class="mood-buttons">
+      <button class="mood-btn" data-sound="adventure">🏔️ Adventure</button>
+      <button class="mood-btn" data-sound="beach">🌊 Beach</button>
+      <button class="mood-btn" data-sound="city">🏙️ City</button>
+      <button class="mood-btn" data-sound="cultural">🏛️ Cultural</button>
+      <button class="mood-btn" data-sound="forest">🌲 Forest</button>
+    </div>
+
+    <audio id="sound-adventure" src="sounds/adventure.mp3" loop></audio>
+    <audio id="sound-beach" src="sounds/beach.mp3" loop></audio>
+    <audio id="sound-city" src="sounds/city.mp3" loop></audio>
+    <audio id="sound-cultural" src="sounds/cultural.mp3" loop></audio>
+    <audio id="sound-forest" src="sounds/forest.mp3" loop></audio>
+  </section>
+
+  <section class="container">
+    <h2>My Travel Goals</h2>
+    <p>Mark destinations as visited or planned.</p>
+    <div id="mood-destinations" class="mood-destinations"></div>
+  </section>
+</main>
+
+<!-- NOW PLAYING MINI-PLAYER -->
+<div id="player" class="player">
+  <img id="player-cover" class="player-cover" src="" alt="Now playing cover">
+  <p id="player-title" class="player-title"></p>
+  <div class="player-controls">
+    <button id="player-toggle" class="player-btn" aria-label="Play or pause">⏸</button>
+    <button id="player-stop" class="player-btn" aria-label="Stop">⏹</button>
+  </div>
+  <div id="player-track" class="player-track">
+    <div id="player-progress" class="player-progress"></div>
+  </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍TravelNest</h4>
+        <p>Your personal travel planning companion</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore Destinations</a></li>
+          <li><a href="budget.html">Budget Planner</a></li>
+          <li><a href="trips.html">Random Trip Generator</a></li>
+          <li><a href="mood.html">Set Travel Mood</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TravelNest. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="mood.js"></script>
+
+</body>
+</html>
